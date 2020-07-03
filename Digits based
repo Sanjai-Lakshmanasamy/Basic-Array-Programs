@@ -1,0 +1,22 @@
+import java.util.*;
+import java.util.Scanner;
+class sanji
+{
+    public static void main(String args[])
+    {
+        Scanner s=new Scanner(System.in);
+        int n=s.nextInt();
+        int r,sum=0,count=0;
+        while(n>0)
+        {
+            r=n%10;
+            System.out.print(r+" ");
+           sum+=r;
+           count++;
+            n=n/10;
+    
+        }
+        System.out.println(count+" ");
+         System.out.println(sum+" ");
+    }
+}
